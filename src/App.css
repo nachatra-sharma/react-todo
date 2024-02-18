@@ -1,0 +1,142 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#todo-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#todo-box {
+  border-radius: 21px;
+  width: 400px;
+  box-shadow: 1px 1px 14px 7px #e9e3e3;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#todo-box h2 {
+  margin-bottom: 10px;
+}
+
+.todo-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.todo-item input {
+  width: 17px;
+  height: 17px;
+}
+
+.todo-item span {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.three-dot {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #dbd8d8;
+}
+
+#add-todo {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin: 10px 0px;
+  padding: 10px 10px;
+  background-color: #e1e1e1;
+  font-size: 0.98rem;
+  border-radius: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.counter-btn {
+  display: flex;
+  gap: 20px;
+}
+
+.counter-btn button {
+  padding: 7px 10px;
+  border: none;
+  border: 1px solid black;
+  background-color: rgb(252, 252, 154);
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#todo-form {
+  background-color: rgba(255, 255, 255, 0.418);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#todo-form form {
+  background-color: #dbd8d8;
+  padding: 30px 50px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#todo-form form label {
+  font-size: 1.2rem;
+}
+#todo-form form input {
+  padding: 7px 5px;
+  outline: none;
+}
+
+#todo-form form button {
+  background-color: rgb(59, 59, 243);
+  color: white;
+  padding: 7px 0px;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
